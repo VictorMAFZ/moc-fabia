@@ -19,7 +19,7 @@ export default function MainDashboard({ onLogout }) {
             <img 
               src="/images/logo-zurich-santander.webp" 
               alt="Zurich Santander Logo" 
-              className="h-28 w-auto max-w-none object-contain absolute -left-2"
+              className="h-28 w-auto max-w-none object-contain absolute left-0"
             />
           </div>
           <div>
@@ -94,7 +94,7 @@ export default function MainDashboard({ onLogout }) {
               <img 
                 src="/images/logo-zurich-santander.webp" 
                 alt="Zurich Santander logo" 
-                className="h-24 w-auto max-w-none object-contain absolute -left-1"
+                className="h-24 w-auto max-w-none object-contain absolute left-0"
               />
             </div>
           </div>
