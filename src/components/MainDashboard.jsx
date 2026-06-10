@@ -14,13 +14,19 @@ export default function MainDashboard({ onLogout }) {
     <div className="flex h-screen w-full bg-gray-50 overflow-hidden">
       {/* Sidebar Fijo */}
       <aside className="w-64 bg-white border-r border-gray-200 flex-col hidden md:flex shrink-0">
-        <div className="p-6 border-b border-gray-100">
-          <h2 className="text-2xl font-bold text-zs-blue">
-            Zurich<span className="text-zs-red">Santander</span>
-          </h2>
-          <p className="text-[10px] text-gray-400 mt-0.5 uppercase tracking-widest font-semibold">
-            Portal Comercial ONLINE 2.0
-          </p>
+        <div className="p-6 border-b border-gray-100 flex flex-col gap-3">
+          <div className="h-12 w-48 overflow-hidden flex items-center justify-start relative">
+            <img 
+              src="/images/logo-zurich-santander.webp" 
+              alt="Zurich Santander Logo" 
+              className="h-28 w-auto max-w-none object-contain absolute -left-2"
+            />
+          </div>
+          <div>
+            <p className="text-[10px] text-gray-400 uppercase tracking-widest font-semibold">
+              Portal Comercial ONLINE 2.0
+            </p>
+          </div>
         </div>
 
         <div className="p-4 flex-1 overflow-y-auto">
@@ -83,8 +89,14 @@ export default function MainDashboard({ onLogout }) {
       {/* Main Content */}
       <main className="flex-1 flex flex-col min-w-0">
         <header className="bg-white border-b border-gray-200 h-16 flex items-center justify-between px-6 shrink-0 shadow-sm z-10">
-          <div className="md:hidden">
-            <h2 className="text-xl font-bold text-zs-blue">Z<span className="text-zs-red">S</span></h2>
+          <div className="md:hidden flex items-center">
+            <div className="h-10 w-36 overflow-hidden flex items-center justify-start relative">
+              <img 
+                src="/images/logo-zurich-santander.webp" 
+                alt="Zurich Santander logo" 
+                className="h-24 w-auto max-w-none object-contain absolute -left-1"
+              />
+            </div>
           </div>
 
           <div className="flex-1 flex justify-center">

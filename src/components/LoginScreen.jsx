@@ -24,6 +24,14 @@ export default function LoginScreen({ onLogin }) {
         </div>
         
         <div className="z-10 max-w-md">
+          {/* Logo Corporativo */}
+          <div className="h-20 w-64 overflow-hidden flex items-center justify-center relative bg-white rounded-2xl shadow-md mb-8 border border-white/10 animate-fade-in-up">
+            <img 
+              src="/images/logo-zurich-santander.webp" 
+              alt="Zurich Santander Logo" 
+              className="h-36 w-auto max-w-none object-contain absolute"
+            />
+          </div>
           <h1 className="text-5xl font-bold mb-6 leading-tight">Seguros ONLINE 2.0</h1>
           <p className="text-xl text-blue-100 mb-12">El portal comercial avanzado potenciado con inteligencia artificial para nuestros asesores.</p>
           
@@ -62,7 +70,15 @@ export default function LoginScreen({ onLogin }) {
       {/* Lado Derecho: Formulario de Login */}
       <div className="flex flex-col justify-center items-center w-full lg:w-1/2 p-8 lg:p-24 bg-zs-gray">
         <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-          <div className="text-center mb-8">
+          <div className="text-center mb-8 flex flex-col items-center">
+            {/* Logo de contingencia para pantallas sin panel izquierdo y refuerzo de marca */}
+            <div className="h-20 w-64 overflow-hidden flex items-center justify-center relative bg-white rounded-2xl border border-gray-100 shadow-sm mb-4">
+              <img 
+                src="/images/logo-zurich-santander.webp" 
+                alt="Zurich Santander Logo" 
+                className="h-36 w-auto max-w-none object-contain absolute"
+              />
+            </div>
             <h2 className="text-3xl font-bold text-gray-800">Bienvenido</h2>
             <p className="text-gray-500 mt-2">Ingresa tus credenciales corporativas</p>
           </div>
